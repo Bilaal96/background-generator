@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Background Generator</h1>
+
+        <div class="main-controls">
+            <!-- Dropdown List -->
+            <select id="gradient-direction" autofocus>
+                <!-- Default Prompt -->
+                <option value="" disabled selected>Select Gradient Direction...</option>
+                <!-- Options -->
+                <option class="direction" value="to bottom">Top To Bottom</option>
+                <option class="direction" value="to top">Bottom To Top</option>
+                <option class="direction" value="to right">Left To Right</option>
+                <option class="direction" value="to left">Right To Left</option>
+                <option class="direction" value="to bottom right">Diagonal 1</option>
+                <option class="direction" value="to bottom left">Diagonal 2</option>
+                <option class="direction" value="to top right">Diagonal 3</option>
+                <option class="direction" value="to top left">Diagonal 4</option>
+            </select>
+
+            <!-- Color Picker 1 -->
+            <input type="color" name="color1" id="color-1" class="color-selector" value="#e66465">
+            <!-- Color Picker 2 -->
+            <input type="color" name="color1" id="color-2" class="color-selector" value="#f6b73c">
+        </div>
+
+        <button id="btn-random">Random!</button>
+
+        <h2>Current CSS Background</h2>
+
+        <!-- CSS Gradient Property -->
+        <h3>linear-gradient(to right, #e66465, #f6b73c)</h3>
+    </div>
+
+    <script src="./background_generator.js"></script>
+</body>
+
+</html>
