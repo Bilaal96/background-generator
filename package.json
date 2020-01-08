@@ -4,6 +4,7 @@
   "description": "",
   "main": "background_generator.js",
   "scripts": {
+    "build": "browserify background_generator.js > bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Bilaal96/background-generator/issues"
   },
-  "homepage": "https://github.com/Bilaal96/background-generator#readme"
+  "homepage": "https://github.com/Bilaal96/background-generator#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }

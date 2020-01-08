@@ -1,3 +1,17 @@
+/* ----------------------------- Include Lodash ----------------------------- */
+//? Import function from Lodash Library using Browserify
+// Using require() syntax, originally for Node.js
+var _ = require('lodash');
+console.log(_);
+
+//! ES6 Import is not supported yet, this requires Webpack:
+// import { without } from 'lodash';
+// console.log(without);
+
+/* ----------------------------- Testing Lodash ----------------------------- */
+let array = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log('answer', _.without(array, 3));
+
 /* ------------------------------ UI Selectors ------------------------------ */
 var gradientDirection = document.querySelector('#gradient-direction');
 var color1 = document.querySelector('#color-1');
